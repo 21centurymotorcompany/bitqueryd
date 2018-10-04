@@ -2,7 +2,7 @@
 
 ## 1. What is bitquery?
 
-bitquery is a Turing complete query language for Bitcoin.
+bitquery is a Turing complete query language that lets you build your own Bitcoin API.
 
 ![f](./f.png)
 
