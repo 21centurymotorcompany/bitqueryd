@@ -74,9 +74,9 @@ Thanks to this additional step, this will respond with:
 
 To summarize,
 
-1. You can write a portable JSON query to read from the blockchain.
-2. You can also add additional step to represent the processing logic, which will return your own custom immutable stream of data from bitcoin, or also known as **API**.
-2. When you mix and match these "API"s together, you can create applications that talk to one another in a deterministic manner.
+1. **Flexible Query:** You can write a portable JSON query to read from the blockchain.
+2. **Response Processing:** You can also add additional step to represent the processing logic, which will return your own custom immutable stream of data from bitcoin, or also known as **API**.
+2. **Interoperable:** When you mix and match these APIs together, you can create applications that trigger and talk to one another in a deterministic manner.
 
 ---
 
