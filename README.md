@@ -1,8 +1,30 @@
 # bitqueryd
 
-bitqueryd is a query engine for Bitquery.
-
 bitquery is a Turing complete query language for Bitcoin.
+
+**bitqueryd** is a bitquery query engine.
+
+![f](./f.png)
+
+# Syntax
+
+bitquery is a meta query language that builds on top of MongoDB query language, which means it supports all MongoDB operations.
+
+But it also handles many other things, for example:
+
+- **Encoding:** takes care of all the hassle with push data encoding 
+- **Processing:** lets you embed a full post-processing logic into the query itself.
+
+![q](./q.png)
+
+Top level attributes:
+
+- v: version
+- q: query (MongoDB query)
+- r: response handler (powered by [jq](https://stedolan.github.io/jq/))
+
+Learn more here: [https://docs.bitdb.network](https://docs.bitdb.network)
+
 
 # Prerequiesites
 
@@ -65,17 +87,6 @@ var bql = {
 
 > Note: By default bitquery connects to `mongodb://localhost:27017` so you don't need to configure anything if you set up BitDB without changing anything.
 
-# BitDB Query Language
-
-BitDB Query Language is a meta query language that builds on top of MongoDB query language, which means it supports all MongoDB operations.
-
-Top level attributes:
-
-- v: version
-- q: query (MongoDB query)
-- r: response handler (powered by [jq](https://stedolan.github.io/jq/))
-
-Learn more here: [https://docs.bitdb.network](https://docs.bitdb.network)
 
 # Configuration
 
