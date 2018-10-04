@@ -1,12 +1,24 @@
 # bitqueryd
 
-bitquery is a Turing complete query language for Bitcoin.
+## 1. What is bitquery?
 
-**bitqueryd** is a bitquery query engine.
+bitquery is a Turing complete query language for Bitcoin.
 
 ![f](./f.png)
 
-# Syntax
+bitquery is a **portable**, **self-contained**, and **programmable** query language that lets you:
+
+1. **Query** bitcoin using a [mongodb query language](https://docs.mongodb.com/manual/tutorial/query-documents/)
+2. **Process** the result using [jq](https://en.wikipedia.org/wiki/Jq_(programming_language)), a turing complete functional programming language
+
+## 2. What is bitqueryd?
+
+bitqueryd is a query engine that:
+
+1. Connects to a [bitdb](https://bitdb.network) node and
+2. Let you interact with bitdb using the bitquery language.
+
+# bitquery syntax
 
 bitquery is a meta query language that builds on top of MongoDB query language, which means it supports all MongoDB operations.
 
@@ -26,19 +38,19 @@ Top level attributes:
 Learn more here: [https://docs.bitdb.network](https://docs.bitdb.network)
 
 
-# Prerequiesites
+# prerequiesites
 
 bitqueryd is a query engine that directly interfaces with a BitDB node. You must have access to a BitDB node through either a local or remote MongoDB URL.
 
 > This library is for connecting directly to a BitDB MongoDB instance, and is not for HTTP access. If you're looking for a public HTTP endpoint, this library is not what you're looking for. You can instead use the HTTP-based API endpoint at [bitdb.network](https://bitdb.network), which takes only a couple of minutes to get your app up and running.
 
-# Install
+# install
 
 ```
 npm install --save bitqueryd
 ```
 
-# Usage
+# usage
 
 First initialize, and use the returned db object to make the query. 
 
@@ -88,7 +100,7 @@ var bql = {
 > Note: By default bitquery connects to `mongodb://localhost:27017` so you don't need to configure anything if you set up BitDB without changing anything.
 
 
-# Configuration
+# configuration
 
 You can set the following two options:
 
