@@ -61,7 +61,7 @@ We can go further by adding a **processing** step:
     }
   },
   "r": {
-    "f": "[ [ .[] | .out[0] ] | group_by(.s2)[] | { topic: .[0].s2, messages: [ .[] | .    s3 ] } ]"
+    "f": "[ [ .[] | .out[0] ] | group_by(.s2)[] | { topic: .[0].s2, messages: [ .[] | .s3 ] } ]"
   }
 }
 ```
