@@ -38,7 +38,7 @@ bitqueryd is a query engine that:
 
 # prerequiesites
 
-bitqueryd is a query engine that directly interfaces with a BitDB node. You must have access to a BitDB node through either a local or remote MongoDB URL.
+bitqueryd is a query engine that directly interfaces with a BitDB node. You must have direct access to a BitDB node through either a local or remote MongoDB URL. (An HTTP based module to come soon)
 
 > This library is for connecting directly to a BitDB MongoDB instance, and is not for HTTP access. If you're looking for a public HTTP endpoint, this library is not what you're looking for. You can instead use the HTTP-based API endpoint at [bitdb.network](https://bitdb.network), which takes only a couple of minutes to get your app up and running.
 
