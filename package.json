@@ -1,0 +1,21 @@
+{
+  "name": "bitqueryd",
+  "version": "0.1.0",
+  "description": "A Turing Complete Query Engine for Bitcoin",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "bcode": "0.0.6",
+    "dotenv": "^6.0.0",
+    "mongodb": "^3.1.4",
+    "node-jq": "^1.3.1",
+    "traverse": "^0.6.6"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
