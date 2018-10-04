@@ -66,7 +66,7 @@ We can go further by adding a **processing** step:
 }
 ```
 
-The `"r.f"` is written in [jq](https://stedolan.github.io/jq/), a Turing complete data processing language.
+The `"r.f"` is written in [jq](https://stedolan.github.io/jq/), a [Turing complete](https://github.com/MakeNowJust/bf.jq) data processing language.
 
 Thanks to this additional step, this will respond with:
 
