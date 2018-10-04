@@ -12,6 +12,16 @@ bitquery is a **portable**, **self-contained**, and **programmable** query langu
 2. **Process** the result using [jq](https://en.wikipedia.org/wiki/Jq_(programming_language)), a turing complete functional programming language
 3. Within a single **self-contained declarative query**.
 
+![q](./q.png)
+
+Top level attributes:
+
+- v: version
+- q: query (MongoDB query)
+- r: response handler (powered by [jq](https://stedolan.github.io/jq/))
+
+> Learn more here: [https://docs.bitdb.network](https://docs.bitdb.network)
+
 With this combination, you can create your own custom API that's:
 
 - **portable:** written in JSON, it's natively supported by all devices, OS, programming languages, and databases.
@@ -23,26 +33,7 @@ With this combination, you can create your own custom API that's:
 bitqueryd is a query engine that:
 
 1. Connects to a [bitdb](https://bitdb.network) node and
-2. Let you interact with bitdb using the bitquery language.
-
-# bitquery syntax
-
-bitquery is a meta query language that builds on top of MongoDB query language, which means it supports all MongoDB operations.
-
-But it also handles many other things, for example:
-
-- **Encoding:** takes care of all the hassle with push data encoding 
-- **Processing:** lets you embed a full post-processing logic into the query itself.
-
-![q](./q.png)
-
-Top level attributes:
-
-- v: version
-- q: query (MongoDB query)
-- r: response handler (powered by [jq](https://stedolan.github.io/jq/))
-
-Learn more here: [https://docs.bitdb.network](https://docs.bitdb.network)
+2. Let you interact with bitdb using the **bitquery** language.
 
 
 # prerequiesites
