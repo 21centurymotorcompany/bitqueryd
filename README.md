@@ -10,6 +10,7 @@ bitquery is a **portable**, **self-contained**, and **programmable** query langu
 
 1. **Query** bitcoin using a [mongodb query language](https://docs.mongodb.com/manual/tutorial/query-documents/)
 2. **Process** the result using [jq](https://en.wikipedia.org/wiki/Jq_(programming_language)), a turing complete functional programming language
+3. Within a single **self-contained declarative query**.
 
 With this combination, you can create your own custom API that's:
 
