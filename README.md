@@ -4,8 +4,6 @@
 
 bitquery is a Turing complete query language for Bitcoin.
 
-It lets you build your own open API from Bitcoin
-
 ![f](./f.png)
 
 bitquery is a **portable**, **self-contained**, and **programmable** query language that lets you:
@@ -15,8 +13,8 @@ bitquery is a **portable**, **self-contained**, and **programmable** query langu
 
 With this combination, you can create your own custom API that's:
 
-- **portable:** expressed as JSON, it's supported by all devices, OS, programming languages, and databases.
-- **self-contained:** the query is self-describing of itself, in terms of what it's supposed to return.
+- **portable:** written in JSON, it's natively supported by all devices, OS, programming languages, and databases.
+- **self-contained:** since the processing function can transform the query result into any format, the query can act as a high level API.
 - **programmable:** combine with other queries to build apps that talk to one another based on bitcoin state
 
 ## 2. What is bitqueryd?
