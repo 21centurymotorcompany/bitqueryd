@@ -10,7 +10,7 @@ bitquery is a **portable**, **self-contained**, and **programmable** query langu
 
 1. **Query** bitcoin (via [bitdb](https://bitdb.network)) using a [mongodb query language](https://docs.mongodb.com/manual/tutorial/query-documents/)
 2. **Process** the result using [jq](https://en.wikipedia.org/wiki/Jq_(programming_language)), a turing complete functional programming language
-3. Within a single **self-contained declarative query**.
+3. All within a single **self-contained declarative query language**.
 
 ![q](./q.png)
 
