@@ -72,7 +72,7 @@ Thanks to this additional step, this will respond with:
 
 ![api](./api.png)
 
-To summarize,
+To summarize, with bitquery:
 
 1. **Flexible Query:** You can write a portable JSON query to read from the blockchain.
 2. **Response Processing:** You can also add additional step to represent the processing logic, which will return your own custom immutable stream of data from bitcoin, or also known as **API**.
