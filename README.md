@@ -42,9 +42,13 @@ Here's a simple bitquery (You can learn more about the syntax [here](https://doc
 }
 ```
 
+When you send the query to a bitdb node, it will respond with the following result:
+
 ![raw](./raw.png)
 
-While this is already very useful, we can go further by adding a **processing** step:
+Already super useful, but it's still raw because every item in the response is a full transaction.
+
+We can go further by adding a **processing** step:
 
 
 ```
@@ -67,7 +71,11 @@ Thanks to this additional step, this will respond with:
 
 ![api](./api.png)
 
-To summarize, you can use a JSON query object to represent an immutable stream of data from bitcoin, or also known as **API**.
+To summarize,
+
+1. You can write a portable JSON query to read from the blockchain.
+2. You can also add additional step to represent the processing logic, which will return your own custom immutable stream of data from bitcoin, or also known as **API**.
+2. When you mix and match these "API"s together, you can create applications that talk to one another in a deterministic manner.
 
 ---
 
