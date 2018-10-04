@@ -1,4 +1,4 @@
-const bitquery = require('../../index')
+const bitquery = require('../index')
 const bql1 = {
   v: 3,
   q: { find: { "out.h1": "6d02" }, sort: { "blk.i": -1 }, limit: 3 }

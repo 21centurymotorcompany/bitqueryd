@@ -1,4 +1,4 @@
-var bitquery = require('../../index')
+var bitquery = require('../index')
 var bql = {
   v: 3,
   q: {

@@ -28,7 +28,19 @@ With this combination, you can create your own custom API that's:
 - **self-contained:** since the processing function can transform the query result into any format, the query can act as a high level API.
 - **programmable:** combine with other queries to build apps that talk to one another based on bitcoin state
 
-## 2. What is bitqueryd?
+## 2. Build your own API from Bitcoin!
+
+A raw database query into Bitdb will look something like this:
+
+![raw](./raw.png)
+
+However with the **processing** step, you can manipulate the data in whichever way you want. For example you can write a query that responds with:
+
+![api](./api.png)
+
+# bitqueryd
+
+## 1. What is bitqueryd?
 
 bitqueryd is a query engine that:
 
@@ -36,23 +48,23 @@ bitqueryd is a query engine that:
 2. Let you interact with bitdb using the **bitquery** language.
 
 
-# prerequiesites
+## 2. prerequiesites
 
 bitqueryd is a query engine that directly interfaces with a BitDB node. You must have direct access to a BitDB node through either a local or remote MongoDB URL. (An HTTP based module to come soon)
 
 > This library is for connecting directly to a BitDB MongoDB instance, and is not for HTTP access. If you're looking for a public HTTP endpoint, this library is not what you're looking for. You can instead use the HTTP-based API endpoint at [bitdb.network](https://bitdb.network), which takes only a couple of minutes to get your app up and running.
 
-# install
+## 3. install
 
 ```
 npm install --save bitqueryd
 ```
 
-# usage
+## 4. usage
 
 First initialize, and use the returned db object to make the query. 
 
-## 1. Using Promises
+### A. Using Promises
 
 
 ```
@@ -74,7 +86,7 @@ bitqueryd.init().then(function(db) {
 })
 ```
 
-## 2. Using Async-Await
+### B. Using Async-Await
 
 ```
 var bitqueryd = require('bitqueryd')
@@ -98,14 +110,14 @@ var bql = {
 > Note: By default bitquery connects to `mongodb://localhost:27017` so you don't need to configure anything if you set up BitDB without changing anything.
 
 
-# configuration
+## 5. configuration
 
 You can set the following two options:
 
 1. **url:** BitDB Node URL
 2. **timeout:** Request timeout
 
-## 1. url
+### A. url
 
 Select the BitDB URL to connect to. 
 
@@ -117,7 +129,7 @@ bitqueryd.init({
 })
 ```
 
-## 2. timeout
+### B. timeout
 
 Set request timeout in milliseconds. All BitDB requests will time out after this duration.
 

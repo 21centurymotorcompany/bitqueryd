@@ -5,7 +5,7 @@
   Warning: May sometimes throw E2BIG error if the mempool data size is large and your computer is small
   check "getconf ARG_MAX" from the terminal to see what your OS allows
 */
-var bitquery = require('../../index')
+var bitquery = require('../index')
 var bql = {
   v: 3,
   q: { db: ["u"], find: { } },

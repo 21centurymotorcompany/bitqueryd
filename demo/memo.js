@@ -1,7 +1,7 @@
 /*
   Filter down to h1 and s2 attributes
 */
-var bitquery = require('../../index')
+var bitquery = require('../index')
 var bql = {
   v: 3,
   q: {

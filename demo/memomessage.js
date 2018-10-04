@@ -1,7 +1,7 @@
 /*
   Extract out ONLY messages (s2) as array
 */
-var bitquery = require('../../index')
+var bitquery = require('../index')
 var bql = {
   "v": 3,
   "q": {
