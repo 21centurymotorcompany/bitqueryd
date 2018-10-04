@@ -30,13 +30,46 @@ With this combination, you can create your own custom API that's:
 
 ## 2. Build your own API from Bitcoin!
 
-A raw database query into Bitdb will look something like this:
+Here's a simple bitquery (You can learn more about the syntax [here](https://docs.bitdb.network/query))
+
+```
+{
+  "v": 3,
+  "q": {
+    "find": { "out.h1": "6d0c" },
+    "project": { "out.$": 1 }
+  }
+}
+```
 
 ![raw](./raw.png)
 
-However with the **processing** step, you can manipulate the data in whichever way you want. For example you can write a query that responds with:
+While this is already very useful, we can go further by adding a **processing** step:
+
+
+```
+{
+  "v": 3,
+  "q": {
+    "find": { "out.h1": "6d0c" },
+    "project": {
+      "out.$": 1
+    }
+  },
+  "r": {
+    "f": "[ [ .[] | .out[0] ] | group_by(.s2)[] | { topic: .[0].s2, messages: [ .[] | .    s3 ] } ]"
+}
+```
+
+The `"r.f"` is written in [jq](https://stedolan.github.io/jq/), a Turing complete data processing language.
+
+Thanks to this additional step, this will respond with:
 
 ![api](./api.png)
+
+To summarize, you can use a JSON query object to represent an immutable stream of data from bitcoin, or also known as **API**.
+
+---
 
 # bitqueryd
 
