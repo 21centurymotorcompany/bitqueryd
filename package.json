@@ -1,19 +1,18 @@
 {
   "name": "bitqueryd",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "A Turing Complete Query Engine for Bitcoin",
   "main": "index.js",
   "author": "",
   "license": "MIT",
   "scripts": {
-    "test": "mocha",
-    "postinstall": "cd ./node_modules/bigjq && npm install --unsafe-perm"
+    "test": "mocha"
   },
   "dependencies": {
     "bcode": "0.0.6",
     "dotenv": "^6.0.0",
     "mongodb": "^3.1.4",
-    "bigjq": "0.0.6",
+    "bigjq": "0.0.7",
     "traverse": "^0.6.6"
   },
   "devDependencies": {
