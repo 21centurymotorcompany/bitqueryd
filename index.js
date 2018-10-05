@@ -1,5 +1,5 @@
 require('dotenv').config()
-const jq = require('node-jq')
+const jq = require('bigjq')
 const bcode = require('bcode')
 const MongoClient = require('mongodb').MongoClient
 const traverse = require('traverse')
@@ -141,7 +141,7 @@ var lookup = function(r, key, resfilter) {
           if (resfilter && resfilter.f && res.length > 0) {
             try {
               let f = resfilter.f;
-              let result = await jq.run(f, res, {input: 'json', output: 'json'})
+              let result = await jq.run(f, res)
               resolve({
                 name: key,
                 items: result
