@@ -1,6 +1,6 @@
 {
   "name": "bitqueryd",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A Turing Complete Query Engine for Bitcoin",
   "main": "index.js",
   "author": "",
@@ -13,7 +13,7 @@
     "bcode": "0.0.6",
     "dotenv": "^6.0.0",
     "mongodb": "^3.1.4",
-    "bigjq": "0.0.4",
+    "bigjq": "0.0.6",
     "traverse": "^0.6.6"
   },
   "devDependencies": {
