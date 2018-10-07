@@ -2,9 +2,9 @@
 
 ## 1. What is bitquery?
 
-bitquery is a Turing complete query language that lets you build your own Bitcoin API.
+bitquery is a **Turing complete query language for building immutable API on Bitcoin**.
 
-![f](./f.png)
+![f](./img/f.png)
 
 bitquery is a **portable**, **self-contained**, and **programmable** query language that lets you:
 
@@ -12,7 +12,7 @@ bitquery is a **portable**, **self-contained**, and **programmable** query langu
 2. **Process** the result using [jq](https://en.wikipedia.org/wiki/Jq_(programming_language)), a turing complete functional programming language
 3. All within a single **self-contained declarative query language**.
 
-![q](./q.png)
+![q](./img/q.png)
 
 Top level attributes:
 
@@ -44,7 +44,7 @@ Here's a simple bitquery (You can learn more about the syntax [here](https://doc
 
 When you send the query to a bitdb node, it will respond with the following result:
 
-![raw](./raw.png)
+![raw](./img/raw.png)
 
 Already super useful, but it's still raw because every item in the response is a full transaction.
 
@@ -70,7 +70,7 @@ The `"r.f"` is written in [jq](https://stedolan.github.io/jq/), a [Turing comple
 
 Thanks to this additional step, this will respond with:
 
-![api](./api.png)
+![api](./img/api.png)
 
 To summarize, with bitquery:
 
